@@ -1,0 +1,12 @@
+.youtube {
+    margin-bottom: 143px;
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__bg {
+        background: url("../img/youtube-bg.png") right no-repeat;
+    }
+}

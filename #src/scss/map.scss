@@ -1,0 +1,17 @@
+.map {
+    &__bg {
+        background: url("../img/map-bg.png") left no-repeat;
+    }
+    &__title {
+        font-family: "PlayfairDisplay-Bold";
+        font-size: 36px;
+        line-height: 48px;
+        color: $straw;
+        margin-bottom: 100px;
+    }
+    &__block {
+        iframe {
+            width: 100%;
+        }
+    }
+}

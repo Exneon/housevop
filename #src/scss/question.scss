@@ -1,0 +1,103 @@
+.question {
+    padding: 180px 0;
+    &__title {
+        font-family: "PlayfairDisplay-Bold";
+        font-size: 36px;
+        line-height: 48px;
+        color: $straw;
+        margin-bottom: 50px;
+    }
+    &__block {
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        input {
+            min-width: 255px;
+            min-height: 50px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        p {
+            max-height: 50px;
+            margin-bottom: 35px;
+            text-align: center;
+            font-family: "Raleway-Regular";
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: #e7e7e7;
+            max-width: 255px;
+        }
+    }
+}
+.question-input {
+    background: rgba($white, 0.2);
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+.question-submit {
+    background: $straw;
+    color: $white;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 1px) {
+    .question {
+        &__block {
+            justify-content: center;
+            form {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .question {
+        &__block {
+            justify-content: space-between;
+            form {
+                input {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+// XXX-Large devices (larger desktops, 1600px and up)
+@media (min-width: 1600px) {
+}

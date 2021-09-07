@@ -1,3 +1,26 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+            url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+$white: #fff;
+$straw: #d4c17f;
+$ebony-clay: #242b33;
+@import "fonts";
+@import "header";
+@import "info";
+@import "apartments";
+@import "contact";
+@import "youtube";
+@import "map";
+@import "question";
+@import "footer";
+/*Обнуление*/
 * {
     padding: 0;
     margin: 0;
@@ -18,14 +41,12 @@ a:focus,
 a:active {
     outline: none;
 }
-
 nav,
 footer,
 header,
 aside {
     display: block;
 }
-
 html,
 body {
     height: 100%;
@@ -42,7 +63,6 @@ button,
 textarea {
     font-family: inherit;
 }
-
 input::-ms-clear {
     display: none;
 }
@@ -66,7 +86,6 @@ ul li {
 img {
     vertical-align: top;
 }
-
 h1,
 h2,
 h3,
@@ -74,6 +93,9 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: 400;
+    font-weight: inherit;
 }
 /*--------------------*/
+body {
+    background-color: $ebony-clay;
+}

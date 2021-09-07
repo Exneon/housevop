@@ -1,0 +1,76 @@
+.footer {
+    background: #2d343c;
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 270px;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    &__block {
+        font-family: "Raleway-Regular";
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: $white;
+        padding: 60px 0;
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 242px;
+        margin: 0 auto;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 1px) {
+    .footer {
+        &__blocks {
+            justify-content: center;
+        }
+        &__block {
+            text-align: center;
+            flex: 1 1 100%;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .footer {
+        &__block {
+            flex: 1 1 50%;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .footer {
+        &__blocks {
+            justify-content: space-between;
+        }
+        &__block {
+            text-align: center;
+            flex: 1 1 auto;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+// XXX-Large devices (larger desktops, 1600px and up)
+@media (min-width: 1600px) {
+}

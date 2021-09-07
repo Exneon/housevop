@@ -1,0 +1,132 @@
+.contact {
+    &__bg {
+        background: linear-gradient(
+                180deg,
+                #242b33 10.42%,
+                rgba(36, 43, 51, 0) 50.52%,
+                #242b33 90.1%
+            ),
+            linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+            url("../img/contact-bg.png") no-repeat;
+        min-height: 560px;
+    }
+    &__block {
+        display: flex;
+        padding-top: 180px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-family: "PlayfairDisplay-Bold";
+        font-size: 36px;
+        line-height: 48px;
+        color: $straw;
+        margin-bottom: 50px;
+    }
+    &__text {
+        font-family: "Raleway-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        max-width: 535px;
+    }
+    &__right {
+        max-width: 540px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 70px;
+            align-items: center;
+            input {
+                min-width: 255px;
+                min-height: 50px;
+                margin-bottom: 35px;
+                text-align: center;
+            }
+            p {
+                max-height: 50px;
+                margin-bottom: 35px;
+                text-align: center;
+                font-family: "Raleway-Regular";
+                font-size: 13px;
+                line-height: 16px;
+                text-align: center;
+                color: #e7e7e7;
+            }
+        }
+    }
+}
+.btn-input {
+    background: rgba($white, 0.2);
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+.btn-submit {
+    background: $straw;
+    color: $white;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 1px) {
+    .contact {
+        &__block {
+            justify-content: center;
+        }
+        &__right {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .contact {
+        &__right {
+            input {
+                width: auto;
+            }
+            p {
+                max-width: 255px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .contact {
+        &__block {
+            justify-content: space-between;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+// XXX-Large devices (larger desktops, 1600px and up)
+@media (min-width: 1600px) {
+}
