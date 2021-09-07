@@ -38,7 +38,7 @@
     &__list {
         display: flex;
         position: relative;
-        z-index: 2;
+        z-index: 4;
         li {
             margin: 0px 0px 0px 20px;
         }
@@ -157,14 +157,14 @@
         }
         &__menu {
             position: fixed;
-            top: -100%;
-            left: 0;
+            top: 0;
+            left: -100%;
             width: 100%;
             height: 100%;
-            overflow: auto;
+            overflow: hidden;
 
             &.active {
-                top: 0;
+                left: 0;
                 background-color: $ebony-clay;
                 padding: 100px 15px 20px 15px;
                 transition: all 0.3s ease 0s;
@@ -201,7 +201,7 @@
         }
         &__menu {
             padding: 0;
-            top: 0;
+            left: 0;
             position: relative;
             width: auto;
             height: auto;

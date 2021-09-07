@@ -101,4 +101,19 @@ html {
 }
 body {
     background-color: $ebony-clay;
+    .wrapper {
+        overflow-x: hidden;
+    }
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+:focus::-moz-placeholder {
+    color: transparent;
+}
+:focus:-moz-placeholder {
+    color: transparent;
+}
+:focus:-ms-input-placeholder {
+    color: transparent;
 }
