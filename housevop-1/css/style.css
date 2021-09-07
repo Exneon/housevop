@@ -950,6 +950,10 @@ body {
   .question__block form input {
     width: auto;
   }
+
+  .question__block form p {
+    max-width: 255px;
+  }
 }
 
 @media (min-width: 992px) {
