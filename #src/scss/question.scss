@@ -29,7 +29,6 @@
             line-height: 16px;
             text-align: center;
             color: #e7e7e7;
-            max-width: 255px;
         }
     }
 }
@@ -81,6 +80,9 @@
                 input {
                     width: auto;
                 }
+            }
+            p {
+                max-width: 255px;
             }
         }
     }

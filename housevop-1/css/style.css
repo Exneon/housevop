@@ -458,7 +458,6 @@
   line-height: 16px;
   text-align: center;
   color: #e7e7e7;
-  max-width: 255px;
 }
 
 .question-input {
@@ -523,6 +522,10 @@
 
 .footer__block p {
   margin-bottom: 15px;
+}
+
+.footer__block span {
+  color: #d4c17f;
 }
 
 .footer__icons {
@@ -627,6 +630,10 @@ h6 {
 }
 
 /*--------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #242b33;
@@ -909,6 +916,10 @@ body {
 
   .question__block form input {
     width: auto;
+  }
+
+  .question__block p {
+    max-width: 255px;
   }
 }
 
