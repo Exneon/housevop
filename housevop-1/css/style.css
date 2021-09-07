@@ -259,8 +259,20 @@
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
 }
 
+.apartments__post img {
+  border: 1px solid #242b33;
+}
+
 .apartments__post:hover::after {
   background: rgba(212, 193, 127, 0.2);
+}
+
+.apartments__post:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .apartments__post img {
@@ -272,16 +284,37 @@
   font-size: 24px;
   line-height: 28px;
   color: #fff;
+  z-index: 1;
+}
+
+.apartments__post span {
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  max-width: 230px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.apartments__text {
   position: absolute;
-  bottom: 50px;
+  bottom: 25%;
   left: 50px;
   z-index: 1;
 }
 
 .contact__bg {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url("../img/contact-bg.png") no-repeat;
-  background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") no-repeat;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url("../img/contact-bg.png") center no-repeat;
+  background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") center no-repeat;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") center no-repeat;
   min-height: 560px;
 }
 
@@ -774,10 +807,10 @@ body {
   }
 
   .apartments__post::after {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
   }
 
   .contact__block {
@@ -917,10 +950,6 @@ body {
   .question__block form input {
     width: auto;
   }
-
-  .question__block p {
-    max-width: 255px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -968,11 +997,11 @@ body {
 
 .webp .apartments__bg{ background: url(../img/apartments-bg.webp) -15px 80px no-repeat; }
 
-.webp .contact__bg{ background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url(../img/contact-bg.webp) no-repeat; }
+.webp .contact__bg{ background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url(../img/contact-bg.webp) center no-repeat; }
 
-.webp .contact__bg{ background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) no-repeat; }
+.webp .contact__bg{ background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) center no-repeat; }
 
-.webp .contact__bg{ background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) no-repeat; }
+.webp .contact__bg{ background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) center no-repeat; }
 
 .webp .youtube__bg{ background: url(../img/youtube-bg.webp) right no-repeat; }
 
