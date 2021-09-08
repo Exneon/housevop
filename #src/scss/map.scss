@@ -7,11 +7,42 @@
         font-size: 36px;
         line-height: 48px;
         color: $straw;
-        margin-bottom: 100px;
     }
     &__block {
         iframe {
             width: 100%;
         }
     }
+}
+@media (min-width: 1px) {
+    .map {
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .map {
+        &__title {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+// XXX-Large devices (larger desktops, 1600px and up)
+@media (min-width: 1600px) {
 }

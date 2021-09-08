@@ -181,7 +181,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding: 120px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -203,13 +202,12 @@
   text-align: center;
   color: #fff;
   max-width: 193px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .info__item img {
   width: 80px;
   height: 80px;
-  margin-bottom: 53px;
 }
 
 .bg {
@@ -324,7 +322,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 180px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -414,10 +411,6 @@
   color: #fff;
 }
 
-.youtube {
-  margin-bottom: 143px;
-}
-
 .youtube__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,15 +437,10 @@
   font-size: 36px;
   line-height: 48px;
   color: #d4c17f;
-  margin-bottom: 100px;
 }
 
 .map__block iframe {
   width: 100%;
-}
-
-.question {
-  padding: 180px 0;
 }
 
 .question__title {
@@ -786,6 +774,9 @@ body .wrapper {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 
   .header__menu.active {
@@ -815,6 +806,11 @@ body .wrapper {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .info__item img {
+    margin-bottom: 20px;
   }
 
   .apartments__title {
@@ -842,10 +838,23 @@ body .wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 40px;
   }
 
   .contact__right input {
     width: 100%;
+  }
+
+  .youtube {
+    margin-bottom: 40px;
+  }
+
+  .map__title {
+    margin-bottom: 40px;
+  }
+
+  .question {
+    padding: 40px 0;
   }
 
   .question__block {
@@ -938,6 +947,11 @@ body .wrapper {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 120px 0;
+  }
+
+  .info__item img {
+    margin-bottom: 53px;
   }
 
   .apartments__title {
@@ -964,12 +978,28 @@ body .wrapper {
     left: 20px;
   }
 
+  .contact__block {
+    padding-top: 180px;
+  }
+
   .contact__right input {
     width: auto;
   }
 
   .contact__right p {
     max-width: 255px;
+  }
+
+  .youtube {
+    margin-bottom: 140px;
+  }
+
+  .map__title {
+    margin-bottom: 100px;
+  }
+
+  .question {
+    padding: 180px 0;
   }
 
   .question__block {

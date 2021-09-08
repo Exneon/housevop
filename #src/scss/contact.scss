@@ -12,7 +12,6 @@
     }
     &__block {
         display: flex;
-        padding-top: 180px;
         align-items: center;
         flex-wrap: wrap;
     }
@@ -87,6 +86,7 @@
     .contact {
         &__block {
             justify-content: center;
+            padding-top: 40px;
         }
         &__right {
             input {
@@ -99,6 +99,9 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .contact {
+        &__block {
+            padding-top: 180px;
+        }
         &__right {
             input {
                 width: auto;

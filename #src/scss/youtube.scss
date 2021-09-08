@@ -1,5 +1,4 @@
 .youtube {
-    margin-bottom: 143px;
     &__block {
         display: flex;
         justify-content: center;
@@ -9,4 +8,32 @@
     &__bg {
         background: url("../img/youtube-bg.png") right no-repeat;
     }
+}
+@media (min-width: 1px) {
+    .youtube {
+        margin-bottom: 40px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .youtube {
+        margin-bottom: 140px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+// XXX-Large devices (larger desktops, 1600px and up)
+@media (min-width: 1600px) {
 }
