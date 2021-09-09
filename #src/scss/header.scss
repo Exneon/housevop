@@ -3,12 +3,12 @@
     padding: 0 15px;
 }
 .header {
+    position: fixed;
     width: 100%;
-    min-height: 840px;
+    background: rgba($ebony-clay, 0.8);
     top: 0;
     left: 0;
     z-index: 50;
-    background: url("../img/header-bg.png") 0 0 / cover no-repeat;
     &__row {
         position: relative;
         display: flex;
@@ -23,13 +23,6 @@
         img {
             width: 134px;
             height: auto;
-        }
-        p {
-            font-family: "Raleway-Regular";
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.12em;
-            color: $white;
         }
     }
     &__burger {
@@ -50,10 +43,15 @@
         letter-spacing: 0.05em;
         color: $white;
     }
+}
+.top {
+    &__bg {
+        background: url("../img/header-bg.png") 0 0 / cover no-repeat;
+        min-height: 840px;
+    }
     &__title {
         max-width: 556px;
-        margin: 200px auto 100px auto;
-        margin-top: 200px;
+        margin: 0 auto;
         h1 {
             font-family: "PlayfairDisplay-Bold";
             line-height: 64px;
@@ -69,7 +67,7 @@
         }
     }
 }
-.header-info {
+.top-info {
     display: flex;
     max-width: 530px;
     margin: 0 auto;
@@ -96,14 +94,6 @@
         max-width: none;
     }
     .header {
-        &__mouse {
-            margin-bottom: 70px;
-        }
-        &__title {
-            h1 {
-                font-size: 36px;
-            }
-        }
         &__burger {
             display: block;
             position: relative;
@@ -172,7 +162,18 @@
             }
         }
     }
-    .header-info {
+    .top {
+        &__mouse {
+            margin-bottom: 70px;
+        }
+        &__title {
+            padding: 160px 0 70px 0;
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+    .top-info {
         flex-wrap: wrap;
     }
     body {
@@ -191,15 +192,6 @@
         &__burger {
             display: none;
         }
-
-        &__mouse {
-            margin-bottom: 200px;
-        }
-        &__title {
-            h1 {
-                font-size: 48px;
-            }
-        }
         &__menu {
             padding: 0;
             left: 0;
@@ -215,7 +207,18 @@
             }
         }
     }
-    .header-info {
+    .top {
+        &__mouse {
+            margin-bottom: 200px;
+        }
+        &__title {
+            padding: 240px 0 100px 0;
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+    .top-info {
         flex-wrap: nowrap;
     }
 }
