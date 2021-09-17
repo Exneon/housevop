@@ -90,7 +90,7 @@
 }
 
 .top__bg {
-  background: url("../img/header-bg.png") 0 0/cover no-repeat;
+  background: url("../img/header-bg.webp") 0 0/cover no-repeat;
   min-height: 840px;
 }
 
@@ -308,9 +308,9 @@
 }
 
 .contact__bg {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url("../img/contact-bg.png") center no-repeat;
-  background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") center no-repeat;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.png") center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url("../img/contact-bg.webp") center no-repeat;
+  background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.webp") center no-repeat;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/contact-bg.webp") center no-repeat;
   min-height: 560px;
 }
 
@@ -1060,17 +1060,9 @@ body .wrapper {
   }
 }
 
-.webp .top__bg{ background: url(../img/header-bg.webp) 0 0/cover no-repeat; }
-
 .webp .info__bg{ background: url(../img/info-bg.webp) right no-repeat; }
 
 .webp .apartments__bg{ background: url(../img/apartments-bg.webp) -15px 80px no-repeat; }
-
-.webp .contact__bg{ background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url(../img/contact-bg.webp) center no-repeat; }
-
-.webp .contact__bg{ background: -o-linear-gradient(top, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), -o-linear-gradient(bottom, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) center no-repeat; }
-
-.webp .contact__bg{ background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../img/contact-bg.webp) center no-repeat; }
 
 .webp .youtube__bg{ background: url(../img/youtube-bg.webp) right no-repeat; }
 
