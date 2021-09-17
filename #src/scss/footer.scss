@@ -27,6 +27,8 @@
         max-width: 242px;
         margin: 0 auto;
         img {
+            width: 100%;
+            height: auto;
             &:hover {
                 opacity: 0.5;
             }

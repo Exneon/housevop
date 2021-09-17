@@ -255,10 +255,6 @@
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
 }
 
-.apartments__post img {
-  border: 1px solid #242b33;
-}
-
 .apartments__post:hover::after {
   background: rgba(212, 193, 127, 0.2);
 }
@@ -273,6 +269,8 @@
 
 .apartments__post img {
   width: 100%;
+  height: auto;
+  border: 1px solid #242b33;
 }
 
 .apartments__post p {
@@ -555,6 +553,11 @@
           justify-content: space-between;
   max-width: 242px;
   margin: 0 auto;
+}
+
+.footer__icons img {
+  width: 100%;
+  height: auto;
 }
 
 .footer__icons img:hover {

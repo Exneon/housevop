@@ -39,9 +39,6 @@
                 #242b33 100%
             );
         }
-        img {
-            border: 1px solid #242b33;
-        }
         &:hover {
             &::after {
                 background: rgba($straw, 0.2);
@@ -54,6 +51,8 @@
         }
         img {
             width: 100%;
+            height: auto;
+            border: 1px solid #242b33;
         }
         p {
             font-family: "Raleway-Regular";
